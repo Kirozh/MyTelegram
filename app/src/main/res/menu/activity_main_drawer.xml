@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none" android:id="@+id/gr1">
+        <item
+            android:id="@+id/nav_create_group"
+            android:icon="@drawable/group"
+            android:title="@string/new_group" />
+        <item
+            android:id="@+id/nav_contact_book"
+            android:icon="@drawable/contact_book"
+            android:title="@string/contacts" />
+        <item
+            android:id="@+id/nav_calls"
+            android:icon="@drawable/telephone"
+            android:title="@string/calls" />
+        <item
+            android:id="@+id/nav_nearby_people"
+            android:icon="@drawable/nearby"
+            android:title="@string/nearby_people"/>
+
+        <item
+            android:id="@+id/nav_saved_messages"
+            android:icon="@drawable/saved"
+            android:title="@string/saved"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings"/>
+    </group >
+    <group android:checkableBehavior="single" android:id="@+id/gr2">
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@drawable/add_user"
+            android:title="@string/add_user"/>
+
+        <item
+            android:id="@+id/nav_telegram_opportunities"
+            android:icon="@drawable/information"
+            android:title="@string/telegram_opportunities"/>
+    </group>
+</menu>

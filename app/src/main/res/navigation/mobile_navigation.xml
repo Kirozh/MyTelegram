@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_chats">
+
+    <fragment
+        android:id="@+id/nav_chats"
+        android:name="com.example.kirozh.mytelegram.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_chats"/>
+
+    <fragment
+        android:id="@+id/nav_create_group"
+        android:name="com.example.kirozh.mytelegram.ui.DrawerFragmentCreateGroup"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_chats" />
+
+    <fragment
+        android:id="@+id/nav_contact_book"
+        android:name="com.example.kirozh.mytelegram.ui.FragmentDrawerContacts"
+        android:label="@string/menu_contacts"
+        tools:layout="@layout/fragment_drawer_contacts" />
+
+    <fragment
+        android:id="@+id/nav_calls"
+        android:name="com.example.kirozh.mytelegram.ui.FragmentDrawerCalls"
+        android:label="@string/menu_calls"
+        tools:layout="@layout/fragment_drawer_calls" />
+
+    <fragment
+        android:id="@+id/nav_nearby_people"
+        android:name="com.example.kirozh.mytelegram.ui.DrawerFragmentPeopleNearby"
+        android:label="@string/menu_nearby_people"
+        tools:layout="@layout/fragment_drawer_people_nearby" />
+
+    <fragment
+        android:id="@+id/nav_saved_messages"
+        android:name="com.example.kirozh.mytelegram.ui.DrawerFragmentSaved"
+        android:label="@string/menu_saved"
+        tools:layout="@layout/fragment_drawer_saved" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.kirozh.mytelegram.ui.FragmentDrawerSettings"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_drawer_settings" />
+
+    <fragment
+        android:id="@+id/nav_invite_friends"
+        android:name="com.example.kirozh.mytelegram.ui.FragmentDrawerInviteFriends"
+        android:label="@string/menu_invite_friends"
+        tools:layout="@layout/fragment_drawer_invite_friends" />
+
+    <fragment
+        android:id="@+id/nav_telegram_opportunities"
+        android:name="com.example.kirozh.mytelegram.ui.FragmentDrawerTelegramOpportunities"
+        android:label="@string/menu_telegram_opportunities"
+        tools:layout="@layout/fragment_drawer_telegram_opportunities" />
+</navigation>
